@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sakshi Suman's portfolio — BCA student and aspiring full-stack developer.">
+
+  <title>Sakshi Suman | Developer Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Sakshi<span>.</span></a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section class="hero section" id="home">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+          <h1>I'm <span>Sakshi Suman</span></h1>
+
+          <h2>
+            I'm an <span id="typing-text">Aspiring Full-Stack Developer</span>
+          </h2>
+
+          <p class="hero-description">
+            I'm a second-year BCA student who enjoys building websites,
+            learning new technologies, and turning ideas into useful
+            digital experiences.
+          </p>
+
+          <div class="button-group">
+            <a href="#projects" class="btn btn-primary">
+              Explore My Projects
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/"
+              target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn ↗
+            </a>
+
+            <a href="https://github.com/SakshiSumanChaurashiya"
+              target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i> GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="sakshi profile.png"
+            alt="Sakshi Suman"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="photo-placeholder" style="display: none;">
+            <span>SS</span>
+            <p>Add your photo</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-card">
+          <p>
+            Hi! I'm Sakshi Suman, a second-year Bachelor of Computer
+            Applications (BCA) student at Eternal University, Baru Sahib,
+            Himachal Pradesh.
+          </p>
+
+          <p>
+            I'm developing my skills in frontend and backend development
+            through hands-on projects. I enjoy solving problems, working
+            with others, and learning by building real applications.
+          </p>
+
+          <p>
+            My goal is to grow as a full-stack developer and gain practical
+            experience through internships and collaborative projects.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+            <p>Web page structure</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Styling and responsive layouts</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Interactive web experiences</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-react"></i>
+            <h3>React.js</h3>
+            <p>Component-based interfaces</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+            <p>Programming fundamentals</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-node-js"></i>
+            <h3>Node.js</h3>
+            <p>Backend development basics</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+          <h2>My <span>Projects</span></h2>
+
+          <p class="section-description">
+            Explore my projects, source code, and available live demos.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Ask Gemini -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">AI / WEB DEVELOPMENT</p>
+              <h3>Ask Gemini</h3>
+
+              <p>
+                An AI-powered application built to explore how a frontend
+                can communicate with a backend and an AI model.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Gemini API</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/SakshiSumanChaurashiya/phase-5-project"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <a class="btn btn-outline btn-small"
+                  href="https://phase-5-project-jpn6.onrender.com/"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: E-commerce -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">FRONTEND DEVELOPMENT</p>
+              <h3>E-commerce Website</h3>
+
+              <p>
+                An e-commerce interface where users can explore the
+                shopping experience and interact with the website.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/SakshiSumanChaurashiya/E-commerce-website"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <a class="btn btn-outline btn-small"
+                  href="https://e-commerce-website-lac-eta.vercel.app/login"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Code4Nature -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">SUSTAINABILITY / TEAM PROJECT</p>
+              <h3>Code4Nature — EcoAI Sustainability Tracker</h3>
+
+              <p>
+                A sustainability-focused workspace concept designed to
+                encourage greener digital habits and responsible AI use.
+              </p>
+
+              <div class="tags">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>Teamwork</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/nargis25-ui/code-for-nature"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <span class="demo-unavailable">
+                  Demo not added yet
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Student Feedback Manager -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">BACKEND DEVELOPMENT</p>
+              <h3>Student Feedback Manager</h3>
+
+              <p>
+                A web application that allows students to submit feedback.
+                It uses Node.js, Express.js, and MongoDB to store feedback.
+              </p>
+
+              <div class="tags">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/SakshiSumanChaurashiya/Student-Feedback-Manager"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <a class="btn btn-outline btn-small"
+                  href="https://student-feedback-manager-2-dkv0.onrender.com/"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Solar System -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-earth-asia"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">FRONTEND DEVELOPMENT / WEB ANIMATION</p>
+              <h3>Solar System</h3>
+
+              <p>
+                I created a Solar System Animation project using HTML and CSS,
+                showing the Sun, planets revolving around it, and the Moon
+                orbiting the Earth. This project helped me learn CSS
+                animations, positioning, and transforms while improving
+                my frontend development skills.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/SakshiSumanChaurashiya/My-Solar-System-hack-project"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <a class="btn btn-outline btn-small"
+                  href="https://my-solar-system-animation.vercel.app/"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Quote Generator -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">FRONTEND DEVELOPMENT / QUOTE GENERATOR</p>
+              <h3>Quote Generator</h3>
+
+              <p>
+                I created a Quote Generator using HTML, CSS, and JavaScript
+                that displays inspiring quotes to motivate users. This project
+                helped me improve my JavaScript logic, DOM manipulation, and
+                frontend development skills while creating an interactive
+                user experience.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/SakshiSumanChaurashiya/Quote-generator-hack-project"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <a class="btn btn-outline btn-small"
+                  href="https://quote-generator-hack-project.vercel.app/"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Quiz App -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">FRONTEND DEVELOPMENT / INTERACTIVE QUIZ APP</p>
+              <h3>Quiz App</h3>
+
+              <p>
+                I created an interactive Quiz App using HTML, CSS, and
+                JavaScript that allows users to test their knowledge through
+                multiple-choice questions. The app displays scores based on
+                users' answers and provides an engaging learning experience.
+                This project helped me improve my JavaScript logic,
+                DOM manipulation, and frontend development skills.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a class="btn btn-primary btn-small"
+                  href="https://github.com/SakshiSumanChaurashiya/MY-Quiz-hackproject"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub ↗
+                </a>
+
+                <a class="btn btn-outline btn-small"
+                  href="https://my-quiz-hackproject.vercel.app/"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+
+        <div class="resume-card">
+          <div>
+            <p class="eyebrow">MY EXPERIENCE AND EDUCATION</p>
+            <h2>My <span>Resume</span></h2>
+
+            <p>
+              View my resume online or download a copy for internship
+              and job applications.
+            </p>
+          </div>
+
+          <div class="button-group">
+            <a class="btn btn-primary"       
+              href="Sakshi_Suman_Full-Stack_Resume (Copy).pdf"
+              target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-pdf"></i> View Resume ↗
+            </a>
+
+            <a class="btn btn-outline"
+              href="Sakshi_Suman_Full-Stack_Resume (Copy).pdf"
+              download="Sakshi-Suman-Resume.pdf">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Contact <span>Me</span></h2>
+
+          <p class="section-description">
+            Interested in collaborating or discussing an internship?
+            I'd be happy to connect.
+          </p>
+        </div>
+
+        <div class="contact-card">
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>Email:</strong>
+
+            <a href="mailto:sakshisuman25@navgurukul.org">
+              sakshisuman25@navgurukul.org
+            </a>
+          </p>
+
+          <p>
+            <i class="fa-brands fa-github"></i>
+            <strong>GitHub:</strong>
+
+            <a href="https://github.com/SakshiSumanChaurashiya"
+              target="_blank" rel="noopener noreferrer">
+              View my GitHub profile ↗
+            </a>
+          </p>
+
+          <form id="contact-form">
+  <label for="visitor-name">Your name</label>
+  <input
+    type="text"
+    id="visitor-name"
+    placeholder="Enter your name"
+    required
+  >
+
+  <label for="visitor-email">Your email</label>
+  <input
+    type="email"
+    id="visitor-email"
+    placeholder="Enter your email"
+    required
+  >
+
+  <label for="visitor-message">Message</label>
+  <textarea
+    id="visitor-message"
+    rows="5"
+    placeholder="Write your message..."
+    required
+  ></textarea>
+
+  <button type="submit" class="btn btn-primary">
+    <i class="fa-solid fa-paper-plane"></i> Send Message
+  </button>
+
+  <p class="form-note" aria-live="polite">
+    Your message will be sent directly to my email.
+  </p>
+</form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © <span id="year"></span> Sakshi Suman. Built with care.
+      </p>
+
+      <a href="#home">
+        <i class="fa-solid fa-arrow-up"></i> Back to top
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
