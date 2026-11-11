@@ -11,7 +11,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://127.0.0.1:5500",
-    "http://localhost:5500"
+    "http://localhost:5500",
+    "https://my-portfolio-4h3f.onrender.com"
   ]
 }));
 
@@ -39,8 +40,7 @@ app.post("/api/contact", async (req, res) => {
     }
 
     // Check email format
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       return res.status(400).json({
         success: false,

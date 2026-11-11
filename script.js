@@ -1,3 +1,4 @@
+
 /* ==============================
    1. MOBILE NAVIGATION
 ================================ */
@@ -189,36 +190,67 @@ if ("IntersectionObserver" in window) {
    6. WORKING CONTACT FORM
 ================================ */
 
+// IMPORTANT:
+// Replace this with your actual BACKEND Render URL.
+// Do not use your frontend Static Site URL here.
+
+const API_URL = "https://YOUR-BACKEND-NAME.onrender.com/api/contact";
+
 const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const name = document.getElementById("visitor-name").value.trim();
-    const email = document.getElementById("visitor-email").value.trim();
-    const message = document.getElementById("visitor-message").value.trim();
+    const name = document
+      .getElementById("visitor-name")
+      .value.trim();
+
+    const email = document
+      .getElementById("visitor-email")
+      .value.trim();
+
+    const message = document
+      .getElementById("visitor-message")
+      .value.trim();
 
     const formNote = document.querySelector(".form-note");
-    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const submitButton = contactForm.querySelector(
+      'button[type="submit"]'
+    );
+
+    if (!formNote || !submitButton) {
+      console.error("Contact form message or submit button is missing.");
+      return;
+    }
 
     if (!name || !email || !message) {
       formNote.textContent = "Please fill in all fields.";
       return;
     }
 
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      formNote.textContent = "Please enter a valid email address.";
+      return;
+    }
+
     try {
       submitButton.disabled = true;
+
       submitButton.innerHTML =
         '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
 
       formNote.textContent = "Sending your message...";
 
-      const response = await fetch("http://localhost:3000/api/contact", {
+      const response = await fetch(API_URL, {
         method: "POST",
+
         headers: {
           "Content-Type": "application/json"
         },
+
         body: JSON.stringify({
           name,
           email,
@@ -229,11 +261,21 @@ if (contactForm) {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.message || "Email could not be sent.");
+        throw new Error(
+          result.message || "Email could not be sent."
+        );
       }
 
-      formNote.textContent = result.message;
-      contactForm.reset();
+      if (result.success) {
+        formNote.textContent =
+          "Your message was sent successfully!";
+
+        contactForm.reset();
+      } else {
+        throw new Error(
+          result.message || "Email could not be sent."
+        );
+      }
 
     } catch (error) {
       console.error("Contact form error:", error);
