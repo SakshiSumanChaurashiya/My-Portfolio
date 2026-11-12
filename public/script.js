@@ -194,7 +194,7 @@ if ("IntersectionObserver" in window) {
 // Replace this with your actual BACKEND Render URL.
 // Do not use your frontend Static Site URL here.
 
-const API_URL = "https://YOUR-BACKEND-NAME.onrender.com/api/contact";
+const API_URL = "/api/contact";
 
 const contactForm = document.getElementById("contact-form");
 
